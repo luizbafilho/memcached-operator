@@ -1,0 +1,7 @@
+apiVersion: memcached.luizbafilho.dev/v1alpha1
+kind: MemcachedCluster
+metadata:
+  name: memcachedcluster-sample
+spec:
+  # Add fields here
+  foo: bar

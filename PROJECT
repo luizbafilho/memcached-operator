@@ -1,0 +1,7 @@
+domain: luizbafilho.dev
+repo: github.com/luizbafilho/memcached-operator
+resources:
+- group: memcached
+  kind: MemcachedCluster
+  version: v1alpha1
+version: "2"

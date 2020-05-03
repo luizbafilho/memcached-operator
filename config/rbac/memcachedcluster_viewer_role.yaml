@@ -1,0 +1,20 @@
+# permissions for end users to view memcachedclusters.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: memcachedcluster-viewer-role
+rules:
+- apiGroups:
+  - memcached.luizbafilho.dev
+  resources:
+  - memcachedclusters
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - memcached.luizbafilho.dev
+  resources:
+  - memcachedclusters/status
+  verbs:
+  - get
